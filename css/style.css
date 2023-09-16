@@ -333,4 +333,63 @@ background-color: #27ae60;
    border: 2px solid #27ae60;
    border-radius: 50%;
  }
-            
+ .comments .comment
+ {
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+ }
+ .comments .comment div h4
+ {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #1d1027;
+ } 
+ .comments .comment p
+ {
+   font-size: 15px;
+   color: #8a8a8a;
+ }            
+/***********RESERVATION*****/
+#reservation
+{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#reservation
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#reservation form
+{
+    display: flex;
+    background-color: rgb(237, 237, 237);
+    padding: 25px;
+    border-radius: 6px;
+    flex-direction: column;
+    width: 350px;
+ 
+}
+#reservation form label
+{
+margin-bottom: 8px;
+font-size: 14px;
+ 
+}
+#reservation input
+{
+  padding: 5px;
+border: 0;
+    padding: 10px;
+    margin-bottom:10px;
+}
