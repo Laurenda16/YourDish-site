@@ -177,7 +177,7 @@ ul{
         }
         .mini_title
         {
-            margin-top: 25px;
+            margin-top: 20px;
             font-size: 20px;
             color: #27ae60;
         }
@@ -234,7 +234,7 @@ ul{
       /***ScrollBAR***/
       ::-webkit-scrollbar /**largeur du scrollbar***/
       {
-        width: 4px;
+        width:10px;
       }
       ::-webkit-scrollbar-thumb/***la couleur applique**/
       {
@@ -245,15 +245,16 @@ background-color: #27ae60;
     {
         display: flex;
         align-items: center;
-        height: calc(100vh - 50px);
         flex-direction: column;
-        padding: 50px 10%;
+        padding: 30px 20%;
         width: 100%;
+        height: calc(110vh - 200px);
     }
     .about
     {
         display: flex;
         align-items: center;
+       
         width: 100%;
         justify-content: center;
         height:70vh;
@@ -265,7 +266,7 @@ background-color: #27ae60;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: 70vh;
 
     }
     .about .left img{
@@ -305,9 +306,9 @@ background-color: #27ae60;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 50px);
+    height: calc(110vh - 200px);
     flex-direction: column;
-    padding: 0 10%;
+    padding: 0 20%;
     margin-top:0;
  }
  .comments
@@ -392,4 +393,288 @@ font-size: 14px;
 border: 0;
     padding: 10px;
     margin-bottom:10px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0, 0,0.2);
 }
+#reservation input:focus
+{
+ color: #27ae60;
+}
+#reservation input[type="submit"]
+{
+  color: #fff;
+  background-color: #27ae60;
+  margin-top: 15px;
+
+}
+#reservation input[type="submit"]:hover
+{
+  color: #fff;
+  background-color: #03933f;
+
+}
+/********Footer*********/
+footer
+{
+    background-color: #f6f6f6;
+}
+footer .services_list
+{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service img{
+    width: 40px;
+    background-color: #27ae60;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px auto;
+}
+.service p {
+   color: #333;
+}
+footer p{
+    text-align: center;
+
+}
+hr{
+    background-color: #07a907;
+    border: 0;
+    height: 2px;
+    width: 100%;
+    margin: 10px 100px;
+}
+.footer_text
+{
+    text-align: center;
+    font-size: 15px;
+    padding: 8px 0;
+
+}
+.footer_text span{
+    color: #27ae60;
+}
+/***********TOOGLE**********/
+.toggle_menu
+{
+    display: none;
+}
+
+/**RESPONSIVE FORM*/
+@media (max-width:964px)
+{
+    header .menu
+    {
+        display: none;
+    }
+    header
+    {
+        padding: 0 20px;
+    }
+    #home
+    {
+        flex-direction: column;
+        padding: 12px;
+        height: fit-content;
+    }
+    #home .left,  #home .right
+    {
+        width: 100%;
+        padding: 0;
+    }
+    #home .left
+    {
+        margin: 100px 0;
+    }
+    #home .left h1{
+font-size: 20px;
+margin-bottom: 15px;
+    }
+    #home .left h4{
+        font-size: 15px;
+       
+            }
+         #home .left p{
+                font-size: 15px;
+               
+         }
+
+         #men .dishes .dish
+         {
+            width: 100%;
+            max-width: 280px;
+         }
+         #about_us
+         {
+            padding: 10px ;
+            height: auto;
+           
+            
+         }
+         #about_us .about
+         {
+        
+           flex-direction: column;
+           padding: fit-content;
+            
+         }
+         #about_us .left, #about_us .right
+         {
+          width: 100%;
+            
+         }
+
+    #about_us .left
+        {
+    height: fit-content;
+   
+        }
+            #about_us .left img
+         {
+          width: 50%;
+          margin-top: 30px;
+            
+         }
+         #about_us .right
+         {
+         text-align: center;
+         padding: 20px;
+            
+         }
+         
+          .about .right h3{
+       font-size: 20px;
+       margin: 10px 30px;
+   }
+   .about .right p{
+    font-size: 15px;
+    margin: 10px 10px;
+    text-align: justify;
+ 
+   
+} 
+.about .right button {
+  
+    padding: 10px 40px;
+    border: 0;
+    margin-bottom: 100px;
+    margin-top: 0;
+    background-color: #27ae60;
+     }          
+/**/
+#comment_section
+    {
+    height: auto;
+
+    }
+ 
+    #comment_section .comments .comment
+    {
+     width: 100%;
+  margin-top: 20px;
+       
+  
+    }
+    .mini_title
+        {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #27ae60;
+        }
+        .title
+        {
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            color: #1d1027;
+           
+        }
+
+        .services_list .service
+        {
+            padding: 0 50px;
+        }
+
+        /*Menu*/
+        .toggle_menu
+        {
+            display: flex;
+            height: 50px;
+            width: 50px;
+           display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            }
+            .toggle_menu::before
+            {
+                position: absolute;
+                content: "";
+                height: 3px;
+                width: 30px;
+                background-color:#27ae60;
+                background-color: 6px;
+                box-shadow: 0 10px 0 #27ae60;
+                transform: translateY(-10px);
+                transition: 0.5s;
+            }
+            .toggle_menu.active::before
+            {
+       
+                transform: translateY(0) rotate(135deg);
+                box-shadow: 0 0 0 #27ae60;
+
+        
+            }
+            .toggle_menu::after
+            {
+                position: absolute;
+                content: "";
+                height: 3px;
+                width: 30px;
+                background-color:#27ae60;
+                background-color: 6px;
+                transform: translateY(10px);
+                transition: 0.5s;
+        
+            }
+            .toggle_menu.active::after
+            {
+       
+                transform: translateY(0) rotate(-135deg);
+                
+            }
+
+            header .menu.res
+            {
+              display: flex;  
+              position:absolute;
+              top: 50px;
+              left: 0;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #ffffff;
+              box-shadow: 0 0 10px #e2e2e2;
+              flex-direction: column;
+
+            }
+            header .menu.res li
+            {
+              margin: 15px 0;
+             
+
+            }
+        }
