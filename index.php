@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+include 'connect/connect.php';
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $number = $_POST['number'];
@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
             <div class="dish">
                 <img src="image/img2.png" alt="">
                 <p>Poulet Orido</p>
-                <h2>25,10 $</h2>
+                <h2>12,50$</h2>
                 <a href="#">Detail..</a>
             </div>
             <div class="dish">
@@ -103,19 +103,19 @@ if (isset($_POST['submit'])) {
             <div class="dish">
                 <img src="image/img4.png" alt="">
                 <p>Poulet Orido</p>
-                <h2>25,10 $</h2>
+                <h2>16,10 $</h2>
                 <a href="#">Detail..</a>
             </div>
             <div class="dish">
                 <img src="image/img5.png" alt="">
                 <p>Poulet Orido</p>
-                <h2>25,10 $</h2>
+                <h2>22,10 $</h2>
                 <a href="#">Details</a>
             </div>
             <div class="dish">
                 <img src="image/img6.png" alt="">
-                <p>Poulet Orido</p>
-                <h2>25,10 $</h2>
+                <p>Akoume + Sauce gombo</p>
+                <h2>15,70 $</h2>
                 <a href="#">Plat</a>
             </div>
 
@@ -188,9 +188,8 @@ if (isset($_POST['submit'])) {
             <input type="number" name="number" min="5">
             <label for="">Date de reservation</label>
             <input type="date" name="date">
-            <textarea name="" id="" cols="30" rows="10" name="comment">
+            <textarea cols="30" rows="10" name="comment">  </textarea>
 
-            </textarea>
             <input type="submit" value="faire une reservation" name="submit">
         </form>
 
