@@ -378,7 +378,7 @@ background-color: #27ae60;
     padding: 25px;
     border-radius: 6px;
     flex-direction: column;
-    width: 350px;
+    width:400px;
  
 }
 #reservation form label
@@ -388,6 +388,15 @@ font-size: 14px;
  
 }
 #reservation input
+{
+  padding: 5px;
+border: 0;
+    padding: 10px;
+    margin-bottom:10px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0, 0,0.2);
+}
+#reservation textarea
 {
   padding: 5px;
 border: 0;
