@@ -46,12 +46,6 @@ if (isset($_POST['submit'])) {
         <div class="toggle_menu">
 
         </div>
-
-
-
-
-
-
     </header>
 
     <!-----------FINHeader----------->
@@ -83,40 +77,40 @@ if (isset($_POST['submit'])) {
 
             <div class="dish">
                 <img src="image/img1.png" alt="">
-                <p>Poulet Orido</p>
-                <p>25,10 $</p>
-                <a href="#">Detail..</a>
+                <p>Poulet Braise</p>
+                <p>15,10 $</p>
+                <a href="#" class="pop">Detail..</a>
             </div>
 
             <div class="dish">
                 <img src="image/img2.png" alt="">
                 <p>Poulet Orido</p>
                 <h2>12,50$</h2>
-                <a href="#">Detail..</a>
+                <a href="#" class="pop">Detail..</a>
             </div>
             <div class="dish">
                 <img src="image/img3.png" alt="">
                 <p>Poulet Orido</p>
                 <h2>25,10 $</h2>
-                <a href="#">Detail..</a>
+                <a href="#" class="pop">Detail..</a>
             </div>
             <div class="dish">
                 <img src="image/img4.png" alt="">
                 <p>Poulet Orido</p>
                 <h2>16,10 $</h2>
-                <a href="#">Detail..</a>
+                <a href="#" class="pop">Detail..</a>
             </div>
             <div class="dish">
                 <img src="image/img5.png" alt="">
                 <p>Poulet Orido</p>
                 <h2>22,10 $</h2>
-                <a href="#">Details</a>
+                <a href="#" class="pop">Details</a>
             </div>
             <div class="dish">
                 <img src="image/img6.png" alt="">
                 <p>Akoume + Sauce gombo</p>
                 <h2>15,70 $</h2>
-                <a href="#">Plat</a>
+                <a href="#" class="pop">Plat</a>
             </div>
 
         </div>
