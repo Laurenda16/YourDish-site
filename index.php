@@ -32,7 +32,9 @@ if (isset($_POST['submit'])) {
     <!-----------Header----------->
     <header class="entete">
         <div class="logo">
-            <p><span>Your</span>Dish</p>
+            <a href="#">
+                <p> <span>Your</span>Dish</p>
+            </a>
         </div>
         <ul class="menu">
             <li><a href="#home">Acceuil</a></li>
@@ -102,7 +104,7 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="dish">
                 <img src="image/img5.png" alt="">
-                <p>Poulet Orido</p>
+                <p>Couscous Nature</p>
                 <h2>22,10 $</h2>
                 <a href="#" class="pop">Details</a>
             </div>
@@ -110,7 +112,9 @@ if (isset($_POST['submit'])) {
                 <img src="image/img6.png" alt="">
                 <p>Akoume + Sauce gombo</p>
                 <h2>15,70 $</h2>
-                <a href="#" class="pop">Plat</a>
+                <div class="login">
+                    <a href="#" class="btn">Plat</a>
+                </div>
             </div>
 
         </div>
@@ -177,12 +181,12 @@ if (isset($_POST['submit'])) {
         <h2 class="title">Pour votre reservation</h2>
         <form action="" method="post">
             <label for="">Votre nom</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required="required">
             <label for="">Votre numero </label>
-            <input type="number" name="number" min="5">
+            <input type="number" name="number" min="5" required="required">
             <label for="">Date de reservation</label>
             <input type="date" name="date">
-            <textarea cols="30" rows="10" name="comment">  </textarea>
+            <textarea cols="30" rows="10" name="comment" required="required">  </textarea>
 
             <input type="submit" value="faire une reservation" name="submit">
         </form>

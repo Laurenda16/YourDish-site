@@ -1,9 +1,11 @@
 {
-	"folders": [
-		{
-			"name": "YourDish-site",
-			"path": "."
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "name": "YourDish-site",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "liveServer.settings.port": 5501
+  }
 }

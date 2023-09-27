@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family:'Poppins', sans-serif;
 }
+
 section
 {
   margin-top: 50px;
@@ -47,7 +48,16 @@ display: flex;
     font-weight: 700;
     font-size: 25px;
     cursor: pointer;
+    
 }
+.logo a{
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
  .logo span {
    
 color: black;
