@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YourDish-site</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-aBjMIxq9J2v9p5LtJ34Km/VUQIDRbTtPbH2+sU1UmKQDVO3u58/iwu5YYTrN7QFQ" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -39,7 +41,7 @@
             <h4>Explorez Notre Nouveau Menu</h4>
             <h1>Cuisine Africaine Authentique</h1>
             <p> Découvrez une expérience culinaire exceptionnelle avec des plats préparés avec soin, mettant en valeur les saveurs authentiques de l'Afrique.</p>
-            <button class="btn" type="submit"><a href="">Reserver Maintenant</a></button>
+            <button class="btn" type="submit"><a href="#reservation">Reserver Maintenant</a></button>
         </div>
         <div class="right">
             <img src="image/img1.png">
@@ -168,8 +170,8 @@
             <label for="phone">Votre numero de Telephone</label>
             <input type="text" name="number" oninput="limitInputLength()" required="required" placeholder="0123456789">
             <label for="">Date de reservation</label>
-            <input type="date" name="date" min="<?php echo date('Y-m-d'); ?>">
-            <textarea cols="30" rows="10" name="comment" required="required">Indiquer toutes informations supplementaires ici</textarea>
+            <input type="date" name="date" required="required" min="<?php echo date('Y-m-d'); ?>">
+            <textarea cols="30" rows="10" name="comment" required="required" placeholder="Indiquer toutes informations supplementaires ici"></textarea>
 
             <input type="submit" value="faire une reservation" name="submit">
         </form>
