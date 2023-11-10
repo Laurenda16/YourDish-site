@@ -1,23 +1,3 @@
-<?php
-include 'connect/connect.php';
-if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $number = $_POST['number'];
-    $date = $_POST['date'];
-    $comment = $_POST['comment'];
-
-    $sql = " insert into `reservation` (name,number,date,comment) values('$name', '$number', '$date', '$comment')";
-    $result = mysqli_query($con, $sql);
-
-    if ($result) {
-        //  echo "Data inserted successfully";
-        header('location:index.php');
-    } else {
-        die(mysqli_error($con));
-    }
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,10 +36,10 @@ if (isset($_POST['submit'])) {
     <section id="home">
 
         <div class="left">
-            <h4>Notre Nouveau Menu</h4>
-            <h1>CUISINE AFRICAINE</h1>
-            <p> Itaque ad facere voluptatum sequi illum pariatur, fugiptatibus dolore aperiam rerum ea magnam consectetur.</p>
-            <button class="btn" type="submit"><a href="">Commander Maintenant</a></button>
+            <h4>Explorez Notre Nouveau Menu</h4>
+            <h1>Cuisine Africaine Authentique</h1>
+            <p> Découvrez une expérience culinaire exceptionnelle avec des plats préparés avec soin, mettant en valeur les saveurs authentiques de l'Afrique.</p>
+            <button class="btn" type="submit"><a href="">Reserver Maintenant</a></button>
         </div>
         <div class="right">
             <img src="image/img1.png">
@@ -72,7 +52,7 @@ if (isset($_POST['submit'])) {
 
     <!-----------SectionMENU----------->
     <section id="men">
-        <h4 class="mini_title">Notre Menu</h4>
+        <h4 class="mini_title">Decouvrez Notre Menu</h4>
         <h2 class="title">Menu Populaire</h2>
 
         <div class="dishes">
@@ -80,42 +60,42 @@ if (isset($_POST['submit'])) {
             <div class="dish">
                 <img src="image/img1.png" alt="">
                 <p>Poulet Braise</p>
-                <p>15,10 $</p>
-                <a href="#" class="pop">Detail..</a>
+                <h2>15,10 $</h2>
+                <a href="#" class="" date-content="Contenu du pop-up pour Poulet Orido">Details.d</a>
             </div>
 
             <div class="dish">
                 <img src="image/img2.png" alt="">
                 <p>Poulet Orido</p>
                 <h2>12,50$</h2>
-                <a href="#" class="pop">Detail..</a>
+                <a href="#" class="" date-content="Contenu du pop-up pour Poulet Orido">Details.d</a>
             </div>
             <div class="dish">
                 <img src="image/img3.png" alt="">
                 <p>Poulet Orido</p>
                 <h2>25,10 $</h2>
-                <a href="#" class="pop">Detail..</a>
+                <a href="#" class="" date-content="Contenu du pop-up pour Poulet Orido">Details.d</a>
             </div>
             <div class="dish">
                 <img src="image/img4.png" alt="">
                 <p>Poulet Orido</p>
                 <h2>16,10 $</h2>
-                <a href="#" class="pop">Detail..</a>
+                <a href="#" class="" date-content="Contenu du pop-up pour Poulet Orido">Details.d</a>
             </div>
             <div class="dish">
                 <img src="image/img5.png" alt="">
                 <p>Couscous Nature</p>
                 <h2>22,10 $</h2>
-                <a href="#" class="pop">Details</a>
+                <a href="#" class="" date-content="Contenu du pop-up pour Poulet Orido">Details.d</a>
             </div>
             <div class="dish">
                 <img src="image/img6.png" alt="">
-                <p>Akoume + Sauce gombo</p>
+                <p>Riz+sauce</p>
                 <h2>15,70 $</h2>
-                <div class="login">
-                    <a href="#" class="btn">Plat</a>
-                </div>
+
+                <a href="#" class="" date-content="Contenu du pop-up pour Poulet Orido">Details.d</a>
             </div>
+        </div>
 
         </div>
 
@@ -125,7 +105,7 @@ if (isset($_POST['submit'])) {
     <!-----------APROPOS----------->
     <section id="about_us">
         <h4 class="mini_title">Apropos de nous</h4>
-        <h2 class="title">Quoi choisir?</h2>
+        <h2 class="title">Notre Histoire</h2>
 
         <div class="about">
 
@@ -134,10 +114,9 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="right">
                 <h3>Meilleure Cuisine au Monde</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis nesciunt accusamus praesentium, recusandae corporis obcaecati dolor nulla quasi sapiente, itaque molestiae voluptate distinctio hic maxime culpa qui, explicabo ipsam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sapiente architecto autem, laborum quaerat cupiditate debitis amet alias voluptas obcaecati, inventore corporis aperiam quia soluta. Ipsa nesciunt quibusdam consequuntur explicabo!
-                    Consequatur voluptatibus doloribus laudantium, blanditiis nam quibusdam saepe voluptate labore velit perspiciatis pariatur praesentium. Obcaecati quibusdam minima aperiam totam. Nisi aspernatur natus possimus obcaecati voluptate quidem iste totam atque asperiores.</p>
-                <button><a href="#">Plus Infos</a></button>
+                <p>Venez vivre une expérience culinaire unique où chaque plat raconte une histoire de saveurs africaines authentiques..</p>
+                <p>Découvrez l'art de la cuisine africaine traditionnelle et contemporaine dans un cadre chaleureux et accueillant.</p>
+                <button><a href="#">En Savoir Plus</a></button>
             </div>
 
 
@@ -147,46 +126,50 @@ if (isset($_POST['submit'])) {
 
     <!--------Section commentaire----------->
     <div id="comment_section">
-        <h4 class="mini_title">Commentaire</h4>
-        <h2 class="title">Des commentaires sur nous</h2>
+        <h4 class="mini_title">Ce que disent nos clients</h4>
+        <h2 class="title">Temoignages</h2>
         <div class="comments">
             <div class="comment">
                 <div>
                     <img src="image/img1.png" alt="">
                     <h4>Smith laore</h4>
                 </div>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis delectus ullam. Quibusdam, dicta incidunt neque, quas voluptates dolores assumenda distinctio hic illum, provident veniam esse! Laborum minus accusantium molestias.
+                "Une ambiance chaleureuse et des plats délicieux. Un lieu incontournable pour les amateurs de cuisine africaine."
             </div>
             <div class="comment">
                 <div>
                     <img src="image/img1.png" alt="">
                     <h4>Smith laore</h4>
                 </div>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis delectus ullam. Quibusdam, dicta incidunt neque, quas voluptates dolores assumenda distinctio hic illum, provident veniam esse! Laborum minus accusantium molestias.
+                Découvrez l'art de la cuisine africaine traditionnelle et contemporaine dans un cadre chaleureux et accueillant.
             </div>
             <div class="comment">
                 <div>
                     <img src="image/img1.png">
                     <h4>Smith laore</h4>
                 </div>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis delectus ullam. Quibusdam, dicta incidunt neque, quas voluptates dolores assumenda distinctio hic illum, provident veniam esse! Laborum minus accusantium molestias.
+                "Une ambiance chaleureuse et des plats délicieux. Un lieu incontournable pour les amateurs de cuisine africaine."
             </div>
         </div>
+
+
+    </div>
+    </div>
     </div>
     <!--------FIN SCommentaire----------->
 
     <!--------REservation----------->
     <section id="reservation">
-        <h4 class="mini_title">Reservation</h4>
-        <h2 class="title">Pour votre reservation</h2>
-        <form action="" method="post">
+        <h4 class="mini_title">Faites vos Reservation</h4>
+        <h2 class="title">Reserver votre place</h2>
+        <form action="traitementReservation.php" method="post">
             <label for="">Votre nom</label>
             <input type="text" name="name" required="required">
-            <label for="">Votre numero </label>
-            <input type="number" name="number" min="5" required="required">
+            <label for="phone">Votre numero de Telephone</label>
+            <input type="text" name="number" oninput="limitInputLength()" required="required" placeholder="0123456789">
             <label for="">Date de reservation</label>
-            <input type="date" name="date">
-            <textarea cols="30" rows="10" name="comment" required="required">  </textarea>
+            <input type="date" name="date" min="<?php echo date('Y-m-d'); ?>">
+            <textarea cols="30" rows="10" name="comment" required="required">Indiquer toutes informations supplementaires ici</textarea>
 
             <input type="submit" value="faire une reservation" name="submit">
         </form>
@@ -231,7 +214,8 @@ if (isset($_POST['submit'])) {
             </div>
             <hr>
         </div>
-        <p class="footer_text">Repris par <span>Laurenda Edorh</span> | Tous les droits reservés</p>
+        <p class="footer_text">"Une ambiance chaleureuse et des plats délicieux. Un lieu incontournable pour les amateurs de cuisine africaine."
+            </div><span>YourDish</span> | Tous les droits reservés</p>
     </footer>
 
     <!-----------Fin Footer----------->
