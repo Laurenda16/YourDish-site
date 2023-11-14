@@ -6,20 +6,24 @@ session_start();
 include 'connect/connect.php';
 
 if (isset($_POST['login'])) {
+
     $username = mysqli_real_escape_string($con, $_POST['username']);
     $password = mysqli_real_escape_string($con, $_POST['password']);
 
     // Remplacez la requête suivante par la méthode appropriée pour vérifier les informations d'identification
-    $sql = "SELECT * FROM admin_users WHERE username='$username' AND password='$password'";
+    $sql = "SELECT * FROM admin_users WHERE username='$username' AND password='$password' limit 1 ";
     $result = mysqli_query($con, $sql);
 
     if ($row = mysqli_fetch_assoc($result)) {
         // Authentification réussie, créer une session admin
-        $_SESSION['admin'] = true;
-        header('Location: admin.php'); // Rediriger vers la page d'administration
+        foreach($row as $cle => $valeur){
+            $_SESSION[$cle] = $valeur;
+        }
+        header('Location:admin.php'); // Rediriger vers la page d'administration
         exit();
     } else {
         $_SESSION['erreur_login'] = "Nom d'utilisateur ou mot de passe incorrect.";
+
         header('Location: login.php');
     }
 }

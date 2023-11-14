@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!-- admin.php -->
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css"> <!-- Assurez-vous d'avoir un fichier de style CSS approprié -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+0
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -61,7 +62,7 @@
 
 <body>
     <header>
-        <h1>Tableau de bord Admin - </h1>
+        <h1>Tableau de bord Admin - <?php echo $_SESSION["username"]?></h1>
         <a href="logout.php" class="dec">Déconnexion</a>
 
     </header>
@@ -73,18 +74,19 @@
         <table>
             <thead>
                 <tr>
-                    <!-- <th>Id</th>-->
+                    <th>Id</th>
                     <th>Nom</th>
                     <th>Numéro de téléphone</th>
                     <th>Date</th>
                     <th>Commentaire</th>
-                    <!-- <th>Imprimer</th>
-                    <th>Supprimer</th>-->
+                    <th>Imprimer</th>
+                    <th>Supprimer</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                session_start();
+                
+
                 // Inclure le fichier de connexion à la base de données
 
                 include 'connect/connect.php';
@@ -101,15 +103,15 @@
 
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<tr>
-                    <td>{$row['id']}</td>
+                         <td>{$row['id']}</td>
                             <td>{$row['name']}</td>
                             <td>{$row['number']}</td>
                             <td>{$row['date']}</td>
-                            <td>{$row['Comment']}</td>";
+                            <td>{$row['Comment']}</td>
 
-                    /* <td><div class='action-box'><a href='print_reservation.php?id={$row['id']}' target='_blank'><i class='fas fa-print'></i></a></div></td>
+                   <td><div class='action-box'><a href='print_reservation.php?id={$row['id']}' target='_blank'><i class='fas fa-print'></i></a></div></td>
             <td><div class='action-box1'><a href='delete_reservation.php?id={$row['id']}'><i class='fas fa-trash-alt'></i></a></div></td>
-          </tr>";*/
+          </tr>";
                 }
                 ?>
             </tbody>
