@@ -29,7 +29,7 @@ if ($row = mysqli_fetch_assoc($result)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Imprimer</title>
+    <title>Imprimer Fichier</title>
 </head>
 
 <body>
