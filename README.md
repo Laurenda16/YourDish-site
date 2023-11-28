@@ -1,4 +1,4 @@
 # YourDish-site
-Site de restaurant proposant des plats et permettant de faire des reservation en ligne
+Site de restaurant proposant des plats et permettant de faire des reservations en ligne
 Ce site est realisé en html5/css3/ en php et en Javascript
 
