@@ -6,6 +6,6 @@ Ce site est realisé en html5/css3/ en php et en Javascript
 (user:admin, password: admin)
 *DashBord: affichage.php
 Basededonnees:local
-je vais utilise now laragon pour la base de donnees
+je vais utilise now laragon pour la base de données
 
 
